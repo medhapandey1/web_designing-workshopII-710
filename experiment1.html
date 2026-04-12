@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment-1</title>
+    <!--linking bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+          crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #0d6efd;
+            color: white;
+            padding: 40px 0; 
+            text-align: center;
+        }
+       header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    nav {
+      background-color: #343a40;
+    }
+    nav a {
+      color: #ced4da !important;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffffff !important;
+    }
+   .content-section {
+      padding: 40px 0;
+    }
+    .card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .card h3 {
+      color: #0d6efd;
+    }
+    footer {
+      background-color: #343a40;
+      color: #adb5bd;
+      text-align: center;
+      padding: 20px 0;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Responsive websites</h1>
+            <p class="lead">Built with Bootstrap Grid systems</p>
+
+        </div>
+    </header>
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand text-white fw-bold">My Site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Service</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<section class="content-section">
+<div class="container">
+    <h2 class="text-center mb-4 fw-bold">Our Content</h2>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="card">
+                <h3>About Us</h3>
+                <p>
+              Welcome to our website. We are a passionate team of developers
+              dedicated to building beautiful, responsive, and accessible
+              web experiences for users across all devices and screen sizes.
+            </p>
+            <p>
+                Our mission is simple : make the web work for everyone, everywhere -- from the latest Macbook Pro to entry level Android
+            </p>
+            <a href="#" class="btn btn-primary mt-2">Learn more</a>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <div class="card">
+                <h3>Our Services</h3>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">🎨 UI/UX Design</li>
+                    <li class="list-group-item">💻 Web Development</li>
+                    <li class="list-group-item">📱 Mobile-Responsive Layouts</li>
+                    <li class="list-group-item">⚙️ Performance Optimization</li>
+                    <li class="list-group-item">🔒 Security & Maintenance</li>
+                </ul>
+                <a href="#" class="btn btn-outline-primary mt-3">View All Services</a>
+            </div>
+        </div>
+    </div>
+    <!-- end of row-->
+</div>
+<!-- end of container-->
+</section>
+<!-- footer-->
+<footer>
+    <div class="container">
+        <p class="mb=0">
+            &copy; 2025   My Site . All Rights Reserved . | Built with ❤️ using Bootstrap
+        </p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
