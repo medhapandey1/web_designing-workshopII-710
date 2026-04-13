@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Operations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="card shadow mx-auto" style="max-width: 400px;">
+            <div class="card-body">
+                <h3 class="card-title text-center mb-4">Calculator</h3>
+                
+                <div class="mb-3">
+                    <label class="form-label">First Number</label>
+                    <input type="number" id="num1" class="form-control" placeholder="Enter number">
+                </div>
+                
+                <div class="mb-3">
+                    <label class="form-label">Second Number</label>
+                    <input type="number" id="num2" class="form-control" placeholder="Enter number">
+                </div>
+                
+                <button onclick="calculate()" class="btn btn-primary w-100 mb-4">Calculate</button>
+
+                <div id="results" class="p-3 bg-white border rounded d-none">
+                    <p><strong>Sum:</strong> <span id="sumText"></span></p>
+                    <p><strong>Difference:</strong> <span id="diffText"></span></p>
+                    <p><strong>Product:</strong> <span id="prodText"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calculate() {
+         
+            const n1 = parseFloat(document.getElementById('num1').value);
+            const n2 = parseFloat(document.getElementById('num2').value);
+
+        
+            if (isNaN(n1) || isNaN(n2)) {
+                alert("Please enter valid numbers");
+                return;
+            }
+
+        
+            const sum = n1 + n2;
+            const diff = n1 - n2;
+            const prod = n1 * n2;
+
+            // 3. Display results on the webpage
+            document.getElementById('sumText').innerText = sum;
+            document.getElementById('diffText').innerText = diff;
+            document.getElementById('prodText').innerText = prod;
+
+            // Show the results div
+            document.getElementById('results').classList.remove('d-none');
+        }
+    </script>
+
+</body>
+</html>
